@@ -24,11 +24,11 @@ console.log("Square of number",calSquare(16))
 
 // Task 3: Write a function expression to find the maximum of two numbers and log the result to the console.
 
-function maxNumber(num1,num2){
+const max = function maxNumber(num1,num2){
     console.log("Maximum NUmber",Math.max(num1,num2))
 }
 
-maxNumber(133,234)
+max(133,234)
 
 // Task 4: Write a function expression to concatenate two strings and return the result.
 
