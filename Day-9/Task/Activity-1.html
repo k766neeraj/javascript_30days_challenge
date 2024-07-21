@@ -1,0 +1,23 @@
+<!-- Activity 1: Selecting and Manipulating Elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selecting and Manipulating Elements</title>
+    </head>
+    <body>
+        <p id="para1">Hello Chai Aur Code</p>
+        <div class="div1">Today is Day 9 JavaScript Challenge</div>
+        <script>
+            // Task 1: Select an HTML element by its ID and change its text content.
+            document.getElementById('para1').innerHTML = "Hello World"
+
+
+            // Task 2: Select an HTML element by its class and change its background color.
+            let changbg =   document.getElementsByClassName('div1')[0]
+            changbg.style.backgroundColor='red'
+        </script>
+</body>
+</html>

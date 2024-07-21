@@ -1,0 +1,38 @@
+<!-- Activity 4: Modifying Attributes and Classes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Attributes and Classes</title>
+    <style>
+        .changcolor{
+            background-color: green;
+        }
+        .changsize{
+            font-size: 50px;
+        }
+        .changebold{
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <a href="http:/www.google.com" id="anch" target="_blank">Google</a>
+    <div class="changcolor changsize">
+        Chai Aur Code
+    </div>
+    <script>
+    // Task 7: Select an HTML element and change one of its attributes (e.g., src of an img tag).
+    setTimeout(()=>{
+        let a1 = document.getElementById('anch')
+        a1.setAttribute('href',"http://www.flipkart.com")
+        a1.textContent='Flipkart'
+    },2000)
+    // Task 8: Add and remove a CSS class to/from an HTML element.
+    let div = document.getElementsByTagName('div')[0]
+    div.classList.add("changebold")
+    div.classList.remove("changcolor")
+    </script>
+</body>
+</html>

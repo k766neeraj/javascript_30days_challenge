@@ -1,0 +1,30 @@
+<!-- Activity 2: Creating and Appending Elements -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and Appending Elements</title>
+</head>
+<body>
+    <h2>Programming Language</h2>
+    <ul id="ul1">
+        <li class="id1">JavaScript</li>
+        <li class="id2">Python</li>
+    </ul>
+    <script>
+    // Task 3: Create a new div element with some text content and append it to the body.
+    let div = document.createElement('div');
+    div.innerHTML='Day-8 Bye'
+    document.body.append(div)
+    // Task 4: Create a new li element and add it to an existing ul list.
+    let li = document.createElement('li')
+    li.className='id3'
+    li.textContent="Java"
+    document.getElementById('ul1').appendChild(li)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Activity 5: Event Handling -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+
+<body>
+    <p id="para">Hello, world! Don't think, just code it!</p>
+    <button id="btn" style="border-radius: 10px; background-color: green; width: 50px; height: 25px;">Click</button>
+    <script>
+        // Task 9: Add a click event listener to a button that changes the text content of a paragraph.
+        let flag = false;
+        let btn = document.getElementById("btn")
+        btn.addEventListener('click', () => {
+            if (flag == false) {
+                let para = document.getElementById("para")
+                para.innerText = "Running the code"
+                flag=true
+            }else{
+                 let para = document.getElementById("para")
+                para.innerText = "Hello, world! Don't think, just code it!"
+                flag=false
+            }
+        })
+        // Task 10: Add a mouseover event listener to an element that changes its border color.
+        let para = document.getElementById("para")
+        para.addEventListener("mouseover",()=>{
+            para.style.border="2px solid black"
+            para.style.borderColor="green"
+        })
+        para.addEventListener("mouseout",()=>{
+            para.style.border=""
+            
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!-- Activity 3: Removing Elements -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing Elements</title>
+</head>
+<body>
+    <ul id="ul1">
+        <li>AWS</li>
+        <li>Azure</li>
+        <li>Google Cloud</li>
+    </ul>
+    <div>Docker</div>
+    <script>
+    // Task 5: Select an HTML element and remove it from the DOM.
+    document.getElementsByTagName('div')[0].remove()
+    // Task 6: Remove the last child of a specific HTML element.
+    let ul = document.getElementById('ul1');
+    ul.lastElementChild.remove()
+    </script>
+</body>
+</html>
