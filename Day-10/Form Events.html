@@ -1,0 +1,35 @@
+<!-- 4. Form Events Script: Create a script that handles form submission and change events on a select dropdown.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <form name="mform" id="mform">
+        <!-- Task 7: Add a submit event listener to a form that prevents the default submission and logs the form data to the console. -->
+        <label for="Name">Name:</label>
+        <input type="text" name="name" id="Name">
+        <br>
+        <label for="platform">Platform:</label>
+        <input type="text" name="platform" id="platform">
+        <input type="submit" value="submit">
+
+    </form>
+
+
+    <form name="m2form">
+        <label for="course">Course:</label>
+        <select name="course" id="course">
+            <option value="java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+    </form>
+    <h4>Display selected dropdown</h4>
+    <p id="para3"></p>
+    <script src="./Form Events.js"></script>
+</body>
+</html>
