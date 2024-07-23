@@ -1,0 +1,7 @@
+Achievement:
+
+1.Understand and create promises, including handling resolved and rejected states.
+2.Chain multiple promises to perform sequential asynchronous operations.
+3.Use async/await to handle asynchronous code more readably.
+4.Fetch data from public APIs using both promises and async/await.
+5.Manage multiple concurrent promises using Promise.all and Promise.race.
