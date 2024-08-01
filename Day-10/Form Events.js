@@ -3,7 +3,7 @@
 
 let form = document.getElementById("mform")
 form.addEventListener("submit", (eve) => {
-    eve.preventDefault();
+    eve.preventDefault()
     const formData = new FormData(eve.target);
     const formdetails = Object.fromEntries(formData);
 
