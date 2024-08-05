@@ -1,0 +1,135 @@
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.container {
+    margin-top: 20px;
+    width: 90vw;
+    height: 100vh;
+    background-color: rgb(199, 224, 224);
+    margin:  10px auto;
+    text-align: center;
+}
+
+#top{
+    font-size: 40px;
+    margin-top: 2px;
+}
+.currWeather{
+    font-family: "Aboreto";
+    border: 2px solid rgb(73, 64, 64);
+    width: 50%;
+    margin: 10px auto;
+    line-height: 25px;
+    background: linear-gradient(45deg,rgb(103, 198, 103),rgb(99, 99, 196));
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#mform{
+    background-color: azure;
+    width: 70vw;
+    height: 25px;
+    margin: 2px auto;
+    display: flex;
+    padding: 5px;
+}
+
+label{
+    font-family: "Aboreto";
+    font-weight: 600;
+    padding: 5px;
+
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    width: 82%;
+    border: 5px dotted skyblue;
+    font-weight: 700;
+    color: rebeccapurple;
+}
+
+#submit{
+    height: 24px;
+    font-size: 12px;
+    border: 3px solid rgb(179, 150, 206);
+    border-radius: 5px;
+    background: linear-gradient(45deg,rgb(103, 198, 103),rgb(99, 99, 196));
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+
+.fiveDayForecast h3{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#fiveDayData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+
+
+.forecastC{
+    font-family: "Aboreto";
+    border: 2px solid rgb(73, 64, 64);
+    width: 30%;
+    height: 10%;
+    margin: 10px auto;
+   
+    background: linear-gradient(45deg,rgb(103, 198, 103),rgb(99, 99, 196));
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* Activity 5: Enhancing the UI */
+
+/* Task 10: Add CSS animations or transitions to make the weather app more interactive and visually appealing. */
+
+#top:hover{
+    transform: skew(10deg);
+}
+
+
+.fiveDayForecast h3 {
+    animation-name: verticalMove;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    position: relative; ;
+    
+}
+
+@keyframes verticalMove {
+    0% {
+        left: -400px;
+        top: 0px; 
+    }
+    25% {
+        left: -200px;
+        top: 0px; 
+    }
+    50% {
+        left: 200px;
+        top: 0px; 
+    }
+    100% {
+        left: 400px;
+        top: 0px; 
+    }
+}
