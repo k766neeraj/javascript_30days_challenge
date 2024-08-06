@@ -1,0 +1,7 @@
+Achievement:
+
+1.Set up a basic project structure with HTML and CSS.
+2.Use the fetch API to retrieve and display movie data from a public API.
+3.Implement search functionality to fetch and display movie data based on user input.
+4.Fetch and display detailed information about selected movies.
+5.Enhance the user interface with CSS styles and animations to make the movie search app more interactive and visually appealing.
