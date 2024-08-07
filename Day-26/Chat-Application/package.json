@@ -1,0 +1,15 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "It is a chat Applcation using ws library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nk",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0"
+  }
+}

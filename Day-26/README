@@ -1,0 +1,14 @@
+Achievement:
+
+1.Set up a basic project structure with HTML and CSS.
+2.Create a WebSocket server using Node.js and the ws library.
+3.Establish a WebSocket connection from the client side to send and receive messages.
+4.Build a chat interface to display and send messages.
+5.Add user authentication and display usernames in the chat.
+6.Enhance the user interface with CSS styles and animations to make the chat application more interactive and visually appealing.
+
+
+To start the project do the following:-
+1. npm install in cmd to install all the dependencies.
+2. then run node index.js to run the server in the correct path.
+3. then run the index.html in local.
