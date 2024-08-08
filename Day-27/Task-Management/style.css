@@ -1,0 +1,166 @@
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,rgb(114, 240, 114),rgb(128, 182, 220),rgb(136, 228, 183));
+
+}
+
+#head{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    width: 90vw;
+    height: 90vh;
+    margin: 2px auto;
+    border: 5px solid white;
+    border-radius: 10px;
+   text-align: center;
+    
+}
+
+.addnote>span{
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+}
+.addnote:hover{
+    cursor: pointer;
+}
+
+#mform{
+    border: 5px solid white;
+    width: 40%;
+    height: 52%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding: 5px;
+    border-radius: 10px;
+    visibility: hidden;
+    background:linear-gradient(45deg,rgb(128, 182, 220),rgb(136, 228, 183),rgb(128, 182, 220));
+}
+
+#subhead{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.form{
+    font-size: 15px;
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title,#dueDate{
+    height: 30px;
+    width: 60%;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#description{
+    height: 150px;
+    width: 60%;
+    font-size: 20px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.sform{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(45deg,rgb(114, 240, 114),rgb(128, 182, 220),rgb(136, 228, 183));    
+    transition: all 0.5s ease;
+}
+
+#submit:hover,#update:hover,#delete:hover{
+    cursor: pointer;
+}
+
+#subhead{
+    text-decoration: underline double;
+    text-decoration-color: white;
+    text-underline-offset: 4px;
+}
+
+#close{
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #close:hover{
+    cursor: pointer;
+  }
+
+  #task-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nothing{
+    color: white;
+    font-family: "Aboreto", system-ui;
+    font-size: 20px;
+  }
+
+  .taskBox{
+    border: 2px solid white;
+    width: 20%;
+    height:20%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .tit{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .desc,.due{
+    font-size: 15px;
+    
+  }
+
+  #update,#delete{
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(45deg,rgb(114, 240, 114),rgb(128, 182, 220),rgb(136, 228, 183));
+    margin: 5px; 
+    padding: 2px; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
