@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <h3 id="head" class="aboreto-regular">Cart Details</h3>
+        <div id="cart_list">
+
+        </div>
+        <div id="pay">
+            <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+        </div>
+        <!-- Activity 5: Checkout Process
+        Task 9: Create a checkout form that collects user information (e.g., name, address, payment details). Style the form using CSS.
+        Task 10: Write a function to handle form submission, simulating the checkout process. Display a confirmation message with the order details. -->
+        <form id="mform">
+            <h2 id="subhead" class="aboreto-regular">Add Note</h2>
+            <input type="number" name="id" id="number" style="display: none;">
+            <div class="titleN form aboreto-regular">
+                <label for="title">Name:</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="descriptionN form aboreto-regular">
+                <label for="description">Address:</label>
+                <textarea name="decription" id="description" placeholder="Type Something..."></textarea>
+            </div>
+            <div class="Date form aboreto-regular">
+                <label for="dueDate">Payment:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+            <div class="form aboreto-regular">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="submit aboreto-regular sform">
+                <input type="submit" name="submit" id="submit" value="Place Order">
+            </div>
+            <div id="close">X</div>
+        </form>
+        <div id="orderDetails"></div>
+ 
+    </div>
+    <footer class="foot aboreto-regular">&copy; Reserved by Neeraj</footer>
+    <script src="./index.js"></script>
+</body>
+</html>

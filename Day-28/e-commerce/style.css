@@ -1,0 +1,338 @@
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224 158 113);
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+#head{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline double;
+    text-underline-offset: 8px;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.shopO{
+    color: white;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.shopO:hover{
+    background-color: rgb(220, 194, 165);
+}
+
+.shopO>span{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.foot{
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#productList{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    
+}
+
+.prodbox{
+    width: 30%;
+    height: 30%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.title{
+    font-family: "Aboreto";
+    font-weight: 900;
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.price{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.desc{
+    font-size: 18px;
+    border: 2px solid white;
+    width: 80%;
+    margin: 2px auto;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.imgurl{
+    
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+    background-color: white;
+}
+
+#btncard{
+    text-align: center;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btncard:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(220, 194, 165);
+}
+
+.nothing{
+    color: white;
+    font-family: "Aboreto", system-ui;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+  }
+
+
+  /* shop.html display cart */
+
+  #cart_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.cartbox{
+    width: 100%;
+    height: 20%;
+    border: 2px solid white;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.cartitle{
+    width: 40%;
+    font-family: "Aboreto";
+    font-weight: 900;
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.cartprice{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 800;
+    width: 20%;
+}
+
+.cartdesc{
+    font-size: 18px;
+    border: 2px solid white;
+    width: 80%;
+    margin: 2px auto;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.cartimg{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: contain;
+    background-color: white;
+}
+
+#remove{
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+#remove:hover,.inc:hover,.dec:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(220, 194, 165);
+}
+
+.quant{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.quancart{
+    font-family: "Aboreto";
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.inc,.dec{
+    font-weight: bolder;
+    border: 2px solid white;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#pay{
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 12;
+}
+
+#mform{
+    border: 5px solid white;
+    width: 50%;
+    min-height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding: 5px;
+    border-radius: 10px;
+    visibility: hidden;
+    background:linear-gradient(45deg,rgb(128, 182, 220),rgb(136, 228, 183),rgb(128, 182, 220));
+}
+
+#subhead{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.form{
+    font-size: 15px;
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title,#dueDate,#payment,#cardNumber{
+    height: 30px;
+    width: 60%;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#description{
+    height: 150px;
+    width: 60%;
+    font-size: 20px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.sform{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(45deg,rgb(114, 240, 114),rgb(128, 182, 220),rgb(136, 228, 183));    
+    transition: all 0.5s ease;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+#subhead{
+    text-decoration: underline double;
+    text-decoration-color: white;
+    text-underline-offset: 4px;
+}
+
+#close{
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #close:hover{
+    cursor: pointer;
+  }
+
+  #orderDetails{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: none;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 2px auto;
+  }
