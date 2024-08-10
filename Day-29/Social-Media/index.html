@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Activity 1: Setting Up the Project
+    Task 1: Initialize a new project directory and set up the basic HTML structure for the social media dashboard.
+    Task 2: Add a basic CSS file to style the social media dashboard, including a container for posts and a form for creating new posts. -->
+
+    <div class="container">
+        <h3 id="head" class="aboreto-regular">Social Media</h3>
+        <div class="taskbar">
+            <div class="login aboreto-regular">login</div>
+            <div class="signup aboreto-regular">signUp</div>
+        </div>
+        <!-- Activity 3: Creating Posts
+        Task 5: Add a form to the HTML structure with fields for entering post details (e.g., text, image). Style the form using CSS.-->
+
+        <div class="create">
+            <form id="createPost">
+                <h2 class="subhead aboreto-regular">Create Post</h2>
+                <div class="titleN form aboreto-regular">
+                    <label for="titlec">Title:</label>
+                    <input type="text" name="titlec" id="titlec">
+                </div>
+                <div class="descN form aboreto-regular">
+                    <label for="description">Description:</label>
+                    <input type="text" name="description" id="description">
+                </div>
+                <div class="imageN form aboreto-regular">
+                    <label for="image">image:</label>
+                    <input type="file" name="image" id="image">
+                </div>
+                <div class="titleN form aboreto-regular">
+                    <label for="tag">Tags:</label>
+                    <input type="text" name="tag" id="tag">
+                </div>
+                <div class="submitN aboreto-regular sform">
+                    <input type="submit" name="post" id="post" value="Post">
+                </div>
+            </form>
+        </div>
+        <h2 class="headfeed aboreto-regular">Feeds</h2>
+        <div id="feeds">
+        </div>
+        <form id="mform">
+            <h2 id="subhead aboreto-regular">Login</h2>
+            <div class="titleN form aboreto-regular">
+                <label for="title">User Name:</label>
+                <input type="text" name="title" id="title" autocomplete="username" required>
+            </div>
+            <div class="passwordN form aboreto-regular">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="current-password" required>
+            </div>
+
+
+            <div class="submit aboreto-regular sform">
+                <input type="submit" name="submit" id="submit" value="login">
+            </div>
+            <div id="close">X</div>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
